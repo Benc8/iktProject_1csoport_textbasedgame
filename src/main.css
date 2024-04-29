@@ -1,6 +1,21 @@
+body {
+    overflow-x: hidden;
+    font-family: 'IM Fell English', serif;
+    transition: all 0.2s;
+}
+*{
+    z-index: 10;
+}
 .kep{
     height: 100%;
     width: 100%;
+    border-radius: 2%;
+    animation: slideInRight 0.5s;
+    transform: scale(100%);
+    transition: all 0.5s;
+}
+.kep:hover{
+    transform: scale(101%);
 }
 .logo{
     position: fixed;
@@ -11,6 +26,12 @@
 p{
     text-align: center;
     text-indent: 2%;
+    transform: scale(100%);
+    transition: all 0.2s;
+}
+p:hover{
+    transform: scale(101%);
+    text-shadow: 0.3px 0.3px 1px whitesmoke;
 }
 #dots{
     text-indent: 0px;
@@ -20,6 +41,14 @@ p{
 .hiddenText #hidden{
     display: none;
 }
+.mb-4{
+    animation: slideInLeft 0.5s;
+}
+h1,h2{
+    text-shadow: 2px 2px 4px #000;
+    z-index: 10;
+}
+
 
 @keyframes slideIn {
     from {
@@ -28,6 +57,26 @@ p{
     }
     to {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateX(0);
         opacity: 1;
     }
 }
