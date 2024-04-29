@@ -35,3 +35,15 @@ p{
 .animate-slide-in {
     animation: slideIn 0.5s;
 }
+
+@media screen and (max-width: 920px) {
+    p{
+        text-align: justify;
+    }
+    .logo{
+        position: relative;
+        display: block;
+        margin: auto;
+        height: 20vh;
+    }
+}
