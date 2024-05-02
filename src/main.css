@@ -7,6 +7,9 @@ body {
     z-index: 10;
 }
 .kep{
+    opacity: 0;
+}
+.kep2{
     height: 100%;
     width: 100%;
     border-radius: 2%;
@@ -47,8 +50,11 @@ p:hover{
 h1,h2{
     text-shadow: 2px 2px 4px #000;
     z-index: 10;
+    transition: all 0.2s;
 }
-
+h1:hover,h2:hover{
+    transform: scale(101%);
+}
 
 @keyframes slideIn {
     from {
